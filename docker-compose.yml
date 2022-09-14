@@ -1,0 +1,10 @@
+version: '3.7'
+
+services:
+  postgres:
+    container_name: postgres-t
+    environment:
+      POSTGRES_PASSWORD: postgres
+    image: postgres:13.5-alpine
+    ports:
+      - 5432:5432
